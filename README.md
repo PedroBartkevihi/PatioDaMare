@@ -1,5 +1,7 @@
 # Pátio da Maré — Landing Page (projeto de estudo)
 
+**Ver online:** https://pedrobartkevihi.github.io/PatioDaMare/
+
 Recriação **para fins de estudo** de uma landing page de divulgação do
 empreendimento **Pátio da Maré**, da **Pátio Sul Incorporações**
 (Itajaí/SC).
