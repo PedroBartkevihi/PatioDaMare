@@ -397,7 +397,7 @@ section.chamada{
 	width: 64px;
 	height: 64px;
 	background-size: 100% 100%;
-	background-image: url('../imagens/arrow.png');
+	background-image: url('../imagens/seta.svg');
 	filter: drop-shadow(0 6px 12px rgba(7,42,58,0.35));
 	animation: sobe-desce 2.4s ease-in-out infinite;
 }
