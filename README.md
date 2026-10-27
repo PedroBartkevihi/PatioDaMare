@@ -2,14 +2,15 @@
 
 **Ver online:** https://pedrobartkevihi.github.io/PatioDaMare/
 
-Recriação **para fins de estudo** de uma landing page de divulgação do
-empreendimento **Pátio da Maré**, da **Pátio Sul Incorporações**
-(Itajaí/SC).
+Landing page **fictícia** de divulgação do empreendimento residencial
+**Pátio da Maré**, da incorporadora **Pátio Sul Incorporações**, criada **para
+fins de estudo**. Partindo de um exercício de curso feito só com HTML e CSS, o
+objetivo foi modernizar o visual — layout, tipografia, cores, espaçamentos,
+botões, cards, responsividade e pequenas interações — mantendo o estilo de
+escrita do código original.
 
-Partindo de um exercício de curso feito só com HTML e CSS, o objetivo aqui foi
-modernizar o visual — layout, tipografia, cores, espaçamentos, botões, cards,
-responsividade e pequenas interações — mantendo a mesma ideia, o mesmo conteúdo
-e o estilo de escrita do código original.
+O empreendimento, a incorporadora e os textos são inventados para este projeto
+e não correspondem a nenhuma empresa ou imóvel real. As fotos são ilustrativas.
 
 ## Tecnologias
 
@@ -30,20 +31,21 @@ Projeto2/
 ├── js/
 │   └── script.js
 └── imagens/
-    ├── bg-form.jpg      (imagem da capa)
-    ├── arrow.png        (seta da seção de chamada)
-    ├── logo1.png        (Pátio Sul Incorporações)
-    ├── logo2.png        (Pátio da Maré)
-    └── mosaico1..4.jpg  (imagens da seção Estrutura)
+    ├── bg-form.jpg      (foto da capa)
+    ├── seta.svg         (seta da seção de chamada)
+    └── mosaico1..4.jpg  (fotos da seção Estrutura)
 ```
+
+As logos do Pátio da Maré e da Pátio Sul são texto com as fontes do site e um
+ícone de ondas em SVG, desenhado direto no `index.html`.
 
 ## Seções
 
 1. **Header** — logos e menu (vira dropdown no mobile).
-2. **Capa** — imagem, chamada principal e formulário de contato.
+2. **Capa** — foto, chamada principal e formulário de contato.
 3. **Chamada** — faixa de destaque com seta e botão para o formulário.
-4. **Estrutura (mosaico)** — quatro cards alternando imagem e texto.
-5. **Rodapé** — logo, slogan e links.
+4. **Estrutura (mosaico)** — quatro cards alternando foto e texto.
+5. **Rodapé** — marca, slogan e links.
 
 ## Interações (`js/script.js`)
 
@@ -63,6 +65,17 @@ python -m http.server 8080
 ```
 
 E acesse `http://localhost:8080`.
+
+## Créditos das imagens
+
+As fotos vêm do [Pexels](https://www.pexels.com/) (licença livre, sem
+necessidade de atribuição) e foram apenas redimensionadas, recortadas e
+salvas sem metadados: [capa](https://www.pexels.com/photo/24807133/),
+[1](https://www.pexels.com/photo/27051764/),
+[2](https://www.pexels.com/photo/6775268/),
+[3](https://www.pexels.com/photo/6957107/) e
+[4](https://www.pexels.com/photo/18822579/). A seta e o ícone das ondas são
+SVGs simples, desenhados para este projeto.
 
 ## Uso
 
