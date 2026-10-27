@@ -10,6 +10,7 @@
 	--cor-primaria-clara: #4683AB;
 	--cor-destaque: #c69a4c;
 	--cor-destaque-escura: #ac823a;
+	--cor-destaque-texto: #8a6420;
 
 	--cor-texto: #1f2d33;
 	--cor-texto-suave: #5c6b72;
@@ -84,7 +85,7 @@ p{
 	font-weight: 600;
 	letter-spacing: 0.18em;
 	text-transform: uppercase;
-	color: var(--cor-destaque-escura);
+	color: var(--cor-destaque-texto);
 }
 
 
@@ -124,26 +125,54 @@ header .container{
 }
 
 .logo-2{
-	display: block;
-	width: 150px;
-	height: 46px;
-	background-image: url('../imagens/logo2.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: left center;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	color: var(--cor-primaria);
+}
+
+.logo-onda{
+	width: 36px;
+	height: 36px;
+	flex-shrink: 0;
+}
+
+.logo-nome{
+	display: flex;
+	flex-direction: column;
+	font-family: 'Playfair Display', 'Open Sans', serif;
+	font-size: 1.35rem;
+	font-weight: 600;
+	line-height: 1;
+	white-space: nowrap;
+}
+
+.logo-nome small{
+	margin-top: 5px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.6rem;
+	font-weight: 600;
+	letter-spacing: 0.34em;
+	text-transform: uppercase;
+	color: var(--cor-texto-suave);
 }
 
 .logo-1{
-	display: block;
-	width: 104px;
-	height: 40px;
+	display: flex;
+	flex-direction: column;
 	padding-left: 16px;
 	border-left: 1px solid var(--cor-borda);
-	background-image: url('../imagens/logo1.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	opacity: 0.85;
+	font-size: 0.8rem;
+	font-weight: 700;
+	line-height: 1.25;
+	letter-spacing: 0.04em;
+	color: var(--cor-texto-suave);
+	white-space: nowrap;
+}
+
+.logo-1 small{
+	font-size: 0.7rem;
+	font-weight: 400;
 }
 
 .menu{
@@ -369,7 +398,7 @@ section.chamada{
 	width: 64px;
 	height: 64px;
 	background-size: 100% 100%;
-	background-image: url('../imagens/arrow.png');
+	background-image: url('../imagens/seta.svg');
 	filter: drop-shadow(0 6px 12px rgba(7,42,58,0.35));
 	animation: sobe-desce 2.4s ease-in-out infinite;
 }
@@ -492,9 +521,24 @@ footer .container{
 	padding: clamp(48px, 7vw, 72px) 24px;
 }
 
-footer img{
-	width: 130px;
-	margin: 0 auto;
+.footer-logo{
+	display: inline-flex;
+	flex-direction: column;
+	font-family: 'Playfair Display', 'Open Sans', serif;
+	font-size: 1.5rem;
+	font-weight: 600;
+	line-height: 1.1;
+	color: var(--cor-primaria);
+}
+
+.footer-logo small{
+	margin-top: 6px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.7rem;
+	font-weight: 600;
+	letter-spacing: 0.3em;
+	text-transform: uppercase;
+	color: var(--cor-texto-suave);
 }
 
 footer p{
@@ -561,8 +605,8 @@ input:focus-visible,
 	transition: opacity var(--transicao);
 }
 
-.logo:hover .logo-1{
-	opacity: 1;
+.logo-2:hover{
+	opacity: 0.85;
 }
 
 [data-revelar]{
@@ -727,13 +771,16 @@ input:focus-visible,
 		padding-bottom: 12px;
 	}
 
-	.logo-2{
-		width: 128px;
-		height: 40px;
+	.logo-onda{
+		width: 30px;
+		height: 30px;
+	}
+
+	.logo-nome{
+		font-size: 1.15rem;
 	}
 
 	.logo-1{
-		width: 88px;
 		padding-left: 12px;
 	}
 
