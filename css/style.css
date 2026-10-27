@@ -10,6 +10,7 @@
 	--cor-primaria-clara: #4683AB;
 	--cor-destaque: #c69a4c;
 	--cor-destaque-escura: #ac823a;
+	--cor-destaque-texto: #8a6420;
 
 	--cor-texto: #1f2d33;
 	--cor-texto-suave: #5c6b72;
@@ -84,7 +85,7 @@ p{
 	font-weight: 600;
 	letter-spacing: 0.18em;
 	text-transform: uppercase;
-	color: var(--cor-destaque-escura);
+	color: var(--cor-destaque-texto);
 }
 
 
